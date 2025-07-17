@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Projeto Portfólio">
+		<meta name="author" content="Generation Brasil">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<title>Meu Perfil</title>
+	</head>
+	<body>
+		<!-- Cabeçalho da Página (header) -->
+		<header>
+			<!-- Div Conteudo do Cabeçalho -->
+			<div id="header_content">
+				<!-- Titulo do Cabeçalho -->
+				<div id="titulo">
+					<!-- Seu nome -->
+					<h1>Generation Brasil</h1>
+				</div>
+
+				<!-- Conteudo do Menu da Página (header) -->
+				<div id="menu">
+					<!-- Menu da Página -->
+					<nav>
+						<!-- Marcadores não ordenados + links -->
+						<ul id="menu">
+							<li>
+								<a href="index.html"> Home </a>
+							</li>
+							<li>
+								<a href="contato.html"> Contato </a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- Seção Principal da Página (main) -->
+		<main>
+			
+			<!-- Seção Formulário de Contato e Redes Sociais -->
+			<section id="contact">
+				
+				<!-- Seção do Formulário-->
+				<form action="#" method="submit" id="formulario">
+					<label for="nome">Nome: </label>
+					<input
+						id="name"
+						type="text"
+						name="name"
+						placeholder="Digite seu nome"
+						required
+					/>
+					<span id="txtNome"></span>
+
+					<label for="email">Email: </label>
+					<input
+						id="email"
+						type="email"
+						name="email"
+						placeholder="Digite seu email"
+						required
+					/>
+					<span id="txtEmail"></span>
+
+					<label for="subject">Assunto: </label>
+					<input
+						id="subject"
+						type="text"
+						name="subject"
+						placeholder="Digite o título da mensagem"
+						required
+					/>
+					<span id="txtSubject"></span>
+
+					<label for="message">Mensagem: </label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Digite sua mensagem"
+						required
+					>
+					</textarea>
+
+					<button type="submit">Enviar</button>
+				</form>
+
+				<!-- Seção do Google Maps -->
+				<article id="mapa">
+
+				</article>
+			</section>
+		</main>
+
+		<!-- Rodapé da Página (footer) -->
+		<footer>
+			<!-- Seção de Contato - Redes Sociais -->
+			<section id="redes_sociais">
+				<a href="">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+				</a>
+				<a href="">
+					<img src="assets/img/github.svg" alt="Github" />
+				</a>
+				<a href="">
+					<img src="assets/img/instagram.svg" alt="Instagram" />
+				</a>
+			</section>
+
+			<h3>Feito com 🧡 por Generation Brasil - 2025</h3>
+		</footer>
+	</body>
+</html>
