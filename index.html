@@ -1,115 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Projeto Portfólio">
-		<meta name="author" content="Generation Brasil">
-		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<title>Meu Perfil</title>
-	</head>
-	<body>
-		<!-- Cabeçalho da Página (header) -->
-		<header>
-			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
-				<!-- Titulo do Cabeçalho -->
-				<div id="titulo">
-					<!-- Seu nome -->
-					<h1>Generation Brasil</h1>
-				</div>
 
-				<!-- Conteudo do Menu da Página (header) -->
-				<div id="menu">
-					<!-- Menu da Página -->
-					<nav>
-						<!-- Marcadores não ordenados + links -->
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Home </a>
-							</li>
-							<li>
-								<a href="contato.html"> Contato </a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Projeto Portfólio">
+	<meta name="author" content="Generation Brasil">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>Generation Brasil</title>
+</head>
+
+<body>
+	<!-- Cabeçalho da Página (header) -->
+	<header>
+
+		<!-- Div Conteudo do Cabeçalho -->
+		<div id="header_content" class="flex">
+			<!-- Titulo do Cabeçalho -->
+			<div id="titulo">
+				<h1>Generation Brasil</h1>
 			</div>
-		</header>
 
-		<!-- Seção Principal da Página (main) -->
-		<main>
-			
-			<!-- Seção Formulário de Contato e Redes Sociais -->
-			<section id="contact">
-				
-				<!-- Seção do Formulário-->
-				<form action="#" method="submit" id="formulario">
-					<label for="nome">Nome: </label>
-					<input
-						id="name"
-						type="text"
-						name="name"
-						placeholder="Digite seu nome"
-						required
-					/>
-					<span id="txtNome"></span>
+			<!-- Conteudo do Menu da Página (header) -->
 
-					<label for="email">Email: </label>
-					<input
-						id="email"
-						type="email"
-						name="email"
-						placeholder="Digite seu email"
-						required
-					/>
-					<span id="txtEmail"></span>
+			<div id="menu">
 
-					<label for="subject">Assunto: </label>
-					<input
-						id="subject"
-						type="text"
-						name="subject"
-						placeholder="Digite o título da mensagem"
-						required
-					/>
-					<span id="txtSubject"></span>
+				<!-- Menu da Página -->
+				<nav>
 
-					<label for="message">Mensagem: </label>
-					<textarea
-						id="message"
-						name="message"
-						placeholder="Digite sua mensagem"
-						required
-					>
-					</textarea>
+					<!-- Marcadores não ordenados + links -->
+					<ul id="menu">
+						<li>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="contato.html">Contato</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+	</header>
 
-					<button type="submit">Enviar</button>
-				</form>
+	<!-- Seção Principal da Página (main) -->
+	<main>
 
-				<!-- Seção do Google Maps -->
-				<article id="mapa">
+		<!-- Seção Sobre você  -->
+		<section id="about" class="flex_start">
 
+			<!-- Titulo da Seção -->
+
+			<h2>Sobre a Generation Brasil</h2>
+
+			<!-- Conteudo da Seção -->
+
+			<div id="conteudo" class="flex"></div>
+
+			<!-- Imagem do Criador do conteudo  -->
+			<div id="sobre" class="redondo sobre-container">
+				<img src="https://i.pinimg.com/736x/ae/ad/31/aead31ca6027aaad237fc136e2c1cd2b.jpg"
+					alt="Foto do criador desse conteudo" class="img_profile" />
+
+				<article id="sobre_texto">
+					<p>
+						Loren ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio possimus, dolorem earum
+						atque itaque quas soluta placeat iure omnis porro cum debitis sequi libero! Deleniti vitae quis
+						hic
+						cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius inventore ullam, quia
+						deserunt enim cumque hic officia repudiandae ad ab et sapiente qui vitae accusamus adipisci
+						provident sit assumenda laboriosam!
+					</p>
+
+					<p>
+						Loren ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio possimus, dolorem earum
+						atque itaque quas soluta placeat iure omnis porro cum debitis sequi libero! Deleniti vitae quis
+						hic
+						cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius inventore ullam, quia
+						deserunt enim cumque hic officia repudiandae ad ab et sapiente qui vitae accusamus adipisci
+						provident sit assumenda laboriosam!
+					</p>
 				</article>
-			</section>
-		</main>
+			</div>
 
-		<!-- Rodapé da Página (footer) -->
-		<footer>
-			<!-- Seção de Contato - Redes Sociais -->
-			<section id="redes_sociais">
-				<a href="">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
-				</a>
-				<a href="">
-					<img src="assets/img/github.svg" alt="Github" />
-				</a>
-				<a href="">
-					<img src="assets/img/instagram.svg" alt="Instagram" />
-				</a>
-			</section>
 
-			<h3>Feito com 🧡 por Generation Brasil - 2025</h3>
-		</footer>
-	</body>
+			<!-- Texto sobre o criador do conteudo -->
+
+
+			</div>
+
+		</section>
+
+		<!-- Seção do Vídeo Favorito -->
+		<section id="video" class="flex_start"></section>
+		<!-- Titulo da Seção -->
+		<section id="video-favorito">
+			<h2>Meu video Favorito:</h2>
+
+			<article class="video-descricao">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio possimus, dolorem earum
+					atque itaque quas soluta placeat iure omnis porro cum debitis sequi libero! Deleniti vitae quis hic
+					cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius inventore ullam, quia
+					deserunt enim cumque hic officia repudiandae ad ab et sapiente qui vitae accusamus adipisci
+					provident sit assumenda laboriosam!</p>
+			</article>
+
+			<div class="video-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/W5J8IgoUdjo" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen>
+				</iframe>
+			</div>
+
+			
+		</section>
+	</main>
+
+	<!-- Rodapé da Página (footer) -->
+	<footer class="flex">
+		<!-- Seção de Contato - Redes Sociais -->
+		<section id="redes_sociais">
+
+			<a href="">
+				<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon" />
+			</a>
+			<a href="">
+				<img src="assets/img/github.svg" alt="Github" class="social_icon" />
+			</a>
+			<a href="">
+				<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon" />
+			</a>
+		</section>
+
+		<h3>Feito com 🧡 por Generation Brasil - 2025</h3>
+	</footer>
+</body>
+
 </html>
